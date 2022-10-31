@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">mR-Logic-9</string>
+    <string name="password">Password</string>
+    <string name="username">UserName</string>
+    <string name="enter_company_code">Company Code</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="canot_be_empty">Cannot be Empty</string>
+</resources>
