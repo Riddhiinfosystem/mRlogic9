@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/logo_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/ic_launcher" />
+
+
+            <!-- <androidx.appcompat.widget.AppCompatImageView
+                 android:id="@+id/logo_img"
+                 android:layout_width="160dp"
+                 android:layout_height="160dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginBottom="10dp"
+                 app:srcCompat="@drawable/prc" />
+ -->
+
+            <!--<com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="@string/username"
+                app:errorEnabled="true">-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/box_border"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="15dp"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="riddhi" />
+
+            <!-- </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            <!--  <com.google.android.material.textfield.TextInputLayout
+                  android:id="@+id/passwordTextInputLayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginEnd="10dp"
+                  app:errorEnabled="true"
+                  app:passwordToggleEnabled="true"
+                  app:passwordToggleTint="@color/colorAccent">-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/box_border"
+                android:drawableStart="@drawable/ic_key"
+                android:drawableEnd="@drawable/ic_visibility_off"
+                android:drawablePadding="15dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="riddhi9" />
+
+            <!--   </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!-- <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/cCodeTextInputLayout"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="10dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginEnd="10dp"
+                 android:hint="@string/enter_company_code"
+                 app:errorEnabled="true">
+ -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cCodeTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/box_border"
+                android:drawableStart="@drawable/ic_business"
+                android:drawablePadding="15dp"
+                android:hint="@string/enter_company_code"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="olpl" />
+
+            <!-- </com.google.android.material.textfield.TextInputLayout>
+ -->
+            <!--   <com.google.android.material.card.MaterialCardView
+                   android:id="@+id/spinnerCard"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginBottom="5dp"
+                   app:cardBackgroundColor="@android:color/white"
+                   app:cardCornerRadius="5dp"
+                   app:cardElevation="0dp"
+                   app:strokeColor="@color/colorPrimary"
+                   app:strokeWidth="1dp">
+
+                   <Spinner
+                       android:id="@+id/durationSpinner"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center_vertical"
+                       android:entries="@array/years"
+                       android:gravity="center_vertical"
+                       android:paddingStart="15dp" />
+               </com.google.android.material.card.MaterialCardView>-->
+
+
+            <CheckBox
+                android:id="@+id/cbRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/remember_me"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="@string/login"
+                android:textColor="@android:color/white" />
+
+
+
+            <!-- <TextView
+                 android:id="@+id/tvForgotPassword"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="5dp"
+                 android:background="?attr/selectableItemBackground"
+                 android:clickable="true"
+                 android:focusable="true"
+                 android:visibility="gone"
+                 android:padding="2dp"
+                 android:text="@string/forgot_password"
+                 android:textColor="@color/colorPrimary" />-->
+
+            <!-- <androidx.appcompat.widget.AppCompatImageView
+                 android:id="@+id/riddhilogo_img"
+                 android:layout_width="140dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="50dp"
+                 app:srcCompat="@drawable/riddhi_logo" />-->
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="version"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </RelativeLayout>
+
+</layout>
+
+
+
